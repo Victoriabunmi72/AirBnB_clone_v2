@@ -37,16 +37,14 @@ def do_deploy(archive_path):
         run("rm -rf {}/web_static".format(folder))
         run("rm -rf /data/web_static/current")
         run("ln -s {} /data/web_static/current".format(folder))
+
         return True
     except:
         return False
 
-
-def deploy():
-    """ Deploy archive! """
-    path = do_pack()
-    if path is None:
-        return False
-    return do_deploy(path)
-
-
+    def deploy():
+        """ Deploy archive! """
+        path = do_pack()
+        if path is None:
+            return False
+        return do_deploy(path)
