@@ -1,24 +1,28 @@
 #!/usr/bin/python3
-"""Your web application must be listening on 0.0.0.0, port 5000"""
+'''
+Starts Flask web application
+'''
 from flask import Flask
+
 
 app = Flask(__name__)
 
+
 @app.route('/', strict_slashes=False)
 def hello_hbnb():
-    """This displays Hello HBNB!"""
+    '''Displays str Hello HBNB!'''
     return "Hello HBNB!"
 
 
 @app.route('/hbnb', strict_slashes=False)
 def hbnb():
-    """Displays HBNB on path /hbnb"""
+    ''' Displays HBNB on path /hbnb'''
     return "HBNB"
 
 
 @app.route('/c/<text>', strict_slashes=False)
 def c_text(text):
-    """Displays C as well as text on path"""
+    ''' Displays C as well as text on path '''
     text = text.replace('_', ' ')
     return "C {}".format(text)
 
@@ -26,7 +30,7 @@ def c_text(text):
 @app.route('/python/', strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
 def python_text(text="is cool"):
-    """Displays python is cool as default or text on path"""
+    '''Displays python is cool as default or text on path '''
     text = text.replace('_', ' ')
     return "Python  {}".format(text)
 
