@@ -1,5 +1,6 @@
-## 0x04. AirBnB clone - Web framework
-# Python Scripts
+# 0x04. AirBnB clone - Web framework
+
+## Python Scripts
 Allowed editors: vi, vim, emacs
 All your files will be interpreted/compiled on Ubuntu 14.04 LTS using python3 (version 3.4.3)
 All your files should end with a new line
@@ -13,7 +14,7 @@ All your classes should have documentation (python3 -c 'print(__import__("my_mod
 All your functions (inside and outside a class) should have documentation (python3 -c 'print(__import__("my_module").my_function.__doc__)' and python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)')
 A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
 
-# HTML/CSS Files
+## HTML/CSS Files
 Allowed editors: vi, vim, emacs
 All your files should end with a new line
 A README.md file at the root of the folder of the project is mandatory
@@ -24,4 +25,3 @@ You are not allowed to use !important or id (#... in the CSS file)
 All tags must be in uppercase
 Current screenshots have been done on Chrome 56.0.2924.87.
 No cross browsers
-
