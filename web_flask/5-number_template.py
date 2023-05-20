@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""python3 -m web_flask.5-number_template"""
-from flask import Flask
+"""Starts Flask web application"""
+from flask import Flask, render_template
 
 
 app = Flask(__name__)
@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/', strict_slashes=False)
 def hello_hbnb():
-    """It displays str Hello HBNB"""
+    """Displays str Hello HBNB!"""
     return "Hello HBNB!"
 
 
